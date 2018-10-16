@@ -8,3 +8,6 @@ A Computer Aided Diagnosis (CAD) system to diagnose lung diseases: COPD and Pulm
 ### Lung Segmentation:
 ![](readmeImages/lungSegmentation.png)
 
+### Evolutionary Algorithm cycle:
+![](readmeImages/evolutionaryCycle.jpg)
+

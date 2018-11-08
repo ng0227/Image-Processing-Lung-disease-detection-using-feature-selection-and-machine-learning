@@ -1,7 +1,7 @@
 
 # code
 
-# # Parkinson Model Fitting using Cuttlefish Algorithm
+# # Lung Model Fitting using Cuttlefish Algorithm
 
 
 import pandas as pd

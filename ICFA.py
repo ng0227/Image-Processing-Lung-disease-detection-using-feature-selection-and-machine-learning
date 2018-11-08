@@ -16,10 +16,6 @@ from sklearn import tree
 df=pd.read_csv("/home/naman/Documents/lung.csv")
 df.head()
 
-
-
-
-
 df_train = df[df.columns[0:21]]
 
 
@@ -31,29 +27,15 @@ min_max_scaler = preprocessing.MinMaxScaler()
 x_scaled = min_max_scaler.fit_transform(x)
 df_train = pd.DataFrame(x_scaled)
 
-
-
-
 df_train.info()
 acc_dt=80+np.random.rand()*10
 print(acc_dt)
 
-
-
-
 df_train = df_train.sample(frac=1).reset_index(drop=True)
 df_train.head()
 
-
-
-
 Y = df['21']
 X = df_train
-
-
-
-
-
 
 df_train.values
 
@@ -62,8 +44,6 @@ X = X.values
 
 
 X = np.c_[np.ones((X.shape[0],1)),X]
-
-
 
 #Y = Y.values
 
@@ -95,8 +75,6 @@ def fitness_function(X,w,Y):
     h = h*0.9999
     J = -1*(1/m)*(np.matmul(np.log(h).T,Y)+np.matmul(np.log(1-h).T,(1-Y)))
     return J
-
-
 
 
 d = 36                                                            
@@ -294,7 +272,7 @@ Best_fitness_at_all = best_fitness
 Best_weights_for_best_fitness = local_best_weights[wx][wy]
 
 
-# # Weights for Parkinson Dataset
+# # Weights for lung Dataset
 
 
 Best_weights=[]
@@ -307,7 +285,7 @@ Best_weights = np.asarray(Best_weights)
 Best_weights
 
 
-# # Evaluation of Parkinson Dataset on best weights
+# # Evaluation of lung Dataset on best weights
 
 
 df_test = df.iloc[:]
@@ -323,26 +301,6 @@ print(df_test.head())
 
 X_test = df_test
 X_test = np.c_[np.ones((X_test.shape[0],1)),X_test]
-
-#df_test= pd.read_csv('/home/dexter/Downloads/Parkinson Dataset/test_data.csv',header =None)
-#print(df_test.columns)
-
-#Y_test = df_test[27]
-#df_test= df_test.drop([0],axis=1)
-
-#x = df_test.values
-#min_max_scaler = preprocessing.MinMaxScaler()
-#x_scaled = min_max_scaler.fit_transform(x)
-#df_test = pd.DataFrame(x_scaled)
-
-
-#X_test = df_test.drop([26],axis=1)
-#X_test = X_test.sample(frac=1).reset_index(drop=True)
-#X_test = np.c_[np.ones((X_test.shape[0],1)),X_test]
-
-#X_test.shape
-
-
 
 h_test = sigmoid(np.matmul(X_test,Best_weights))
 print(len(h_test))

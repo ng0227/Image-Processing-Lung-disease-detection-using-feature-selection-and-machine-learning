@@ -7,11 +7,11 @@ A Computer Aided Diagnosis (CAD) system to diagnose lung diseases: COPD and Pulm
   - 99.2% accuracy achieved.
 
 ### Proposed CAD System:
-<img src="readmeImages/CAD_System.jpg" width="400">
+<img src="readmeImages/CAD_System.jpg" width="700">
 
 ### Lung Segmentation:
-![](readmeImages/lungSegmentation.png)
+<img src="readmeImages/lungSegmentation.png" width="700">
 
 ### Feature Selection - Evolutionary Algorithm cycle:
-![](readmeImages/evolutionaryCycle.jpg)
+<img src="readmeImages/evolutionaryCycle.jpg" width="700">
 

@@ -4,7 +4,7 @@ A Computer Aided Diagnosis (CAD) system to diagnose lung diseases: COPD and Pulm
   - Features extracted are : Zenrike, Haralick, Gabor and Tamura (total 111 image descriptors)
   - Bio-inspired evolutionary algorithms : Crow Search, Grey Wolf and Cuttlefish algorithms were used for feature selection.
   - Classifiers used : SVM (Linear kernel), KNN, Random forest and Decision tree.
-  - 99.2% accuracy achieved.
+  - 99.4% accuracy achieved.
   
   
 ### Dataset:

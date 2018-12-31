@@ -5,6 +5,10 @@ A Computer Aided Diagnosis (CAD) system to diagnose lung diseases: COPD and Pulm
   - Bio-inspired evolutionary algorithms : Crow Search, Grey Wolf and Cuttlefish algorithms were used for feature selection.
   - Classifiers used : SVM (Linear kernel), KNN, Random forest and Decision tree.
   - 99.2% accuracy achieved.
+  
+  
+### Dataset:
+The dataset was acquired in collaboration with the Walter Cantídio University Hospital, Fortaleza, Brazil. The following CT systems were used for obtaining the dataset: Toshiba Aquilion (TA), GE Medical system LightSpeed16 (GEMSL) and Phillips Brilliance 10 (PB) and the axial tomographic planes were used. In this study, 36 chest CT images were used out of which 12 CT images were from healthy volunteers, 24 CT images were from patients: 12 patients with pulmonary emphysema and 12 patients with fibrosis. In total, 72 lungs were considered and studied in this work.
 
 ### Proposed CAD System:
 <img src="readmeImages/CAD_System.jpg" width="700">

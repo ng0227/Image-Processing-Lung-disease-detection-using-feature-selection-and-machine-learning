@@ -19,3 +19,9 @@ The dataset was acquired in collaboration with the Walter Cantídio University H
 ### Feature Selection - Evolutionary Algorithm cycle:
 <img src="readmeImages/evolutionaryCycle.jpg" width="700">
 
+
+### Reference
+For more detail, refer to the published paper:
+Naman Gupta, Deepak Gupta, Ashish Khanna, Pedro Rebouças Filho, Victor Hugo C. de Albuquerque, “Evolutionary Algorithms for Automatic Lung Disease Detection”, Measurement (Elsevier), doi:10.1016/j.measurement.2019.02.042, 2019.
+
+
